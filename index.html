@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zaqkii | Game Dev & QA Tester</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; }
+    body { background: #0c0c10; color: #e6e6f0; line-height: 1.6; scroll-behavior: smooth; }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 18px 8%; background: rgba(12, 12, 16, 0.92);
+      border-bottom: 1px solid #1e1e28; position: sticky; top: 0; z-index: 100;
+    }
+    .logo { font-weight: 800; font-size: 1.2rem; color: #8c6eff; letter-spacing: 0.5px; }
+    .nav-links { display: flex; gap: 18px; flex-wrap: wrap; }
+    .nav-links a { color: #b8b8c8; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: 0.2s; }
+    .nav-links a:hover { color: #8c6eff; }
+
+    .hero { text-align: center; padding: 90px 8% 70px; }
+    .hero h1 {
+      font-size: 2.8rem; font-weight: 800; line-height: 1.15; margin-bottom: 16px;
+      background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .subtitle { font-size: 1.05rem; color: #cfcfe0; margin-bottom: 24px; }
+    .badge {
+      display: inline-block; background: rgba(123, 92, 255, 0.15);
+      border: 1px solid #7b5cff; color: #cbbdff;
+      padding: 8px 20px; border-radius: 999px; font-weight: 600; font-size: 0.9rem;
+    }
+
+    section { max-width: 900px; margin: 0 auto 55px; padding: 0 8%; }
+    h2 { font-size: 1.6rem; margin-bottom: 18px; display: flex; align-items: center; gap: 8px; }
+    h2::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #8c6eff; display: inline-block; }
+
+    .card {
+      background: #14141b; border: 1px solid #232330; border-radius: 14px;
+      padding: 22px; margin-bottom: 16px; transition: 0.2s;
+    }
+    .card:hover { border-color: #7b5cff; }
+    .card h3 { color: #ffffff; margin-bottom: 6px; font-size: 1.15rem; }
+    .tag {
+      display: inline-block; font-size: 0.78rem; padding: 3px 10px;
+      border-radius: 6px; background: #221d3a; color: #b5a6ff; margin-bottom: 10px; font-weight: 600;
+    }
+    .card p { color: #b4b4c6; font-size: 0.95rem; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .contact-btn {
+      display: inline-block; margin-top: 10px; margin-right: 10px;
+      background: #7b5cff; color: #fff; padding: 10px 20px;
+      border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.92rem;
+    }
+    .contact-btn.secondary { background: #1c1c26; border: 1px solid #323244; }
+    footer { text-align: center; padding: 30px; color: #6c6c80; font-size: 0.85rem; border-top: 1px solid #1a1a22; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">✦ Zaqkii</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#gamedev">Game Dev</a>
+      <a href="#testing">QA Testing</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Hello, I'm<br>Zaqkii</h1>
+    <p class="subtitle">Game Developer ✨ Project Lead 🎮 QA & Systems Tester</p>
+    <div class="badge">⚡ Available for Game Dev & QA Testing</div>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        Hi, I'm Zaqkii — a passionate game developer and QA tester focused on gameplay mechanics, combat feel, UI flow, and bug prevention. I enjoy helping teams polish games from early alpha builds to full public releases.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Workflow</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🎮 Game Development</h3>
+        <p>System & gameplay design, UI integration, combat pacing, balancing, and team coordination.</p>
+      </div>
+      <div class="card">
+        <h3>🛡️ QA & Bug Testing</h3>
+        <p>Hitbox & combat stress-testing, exploit checks, bug reproduction steps, and detailed feedback reports.</p>
+      </div>
+      <div class="card">
+        <h3>📋 Production & Lead</h3>
+        <p>Milestone tracking, tester organization, patch note summaries, and player feedback analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gamedev">
+    <h2>Game Dev Experience</h2>
+    <div class="card">
+      <span class="tag">Project Lead & Game Design</span>
+      <h3>Project Title #1 (Edit Name)</h3>
+      <p>Directed core gameplay systems, coordinated animations/VFX, and managed updates and community feedback.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Developer / Contributor</span>
+      <h3>Project Title #2 (Edit Name)</h3>
+      <p>Worked on UI layout, progression balancing, and core mechanics polish prior to release.</p>
+    </div>
+  </section>
+
+  <section id="testing">
+    <h2>Testing Experience</h2>
+    <div class="card">
+      <span class="tag">Lead QA Tester</span>
+      <h3>Tested Game #1 (Edit Name)</h3>
+      <p>Identified critical combat, replication, and UI bugs before launch; provided video reproduction steps and balance notes.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Closed Alpha / Beta Tester</span>
+      <h3>Tested Game #2 (Edit Name)</h3>
+      <p>Stress-tested abilities, movement tech, and progression loops across multiple test waves.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Want to work together or need a reliable QA tester for your upcoming game? Reach out anytime:</p>
+      <a class="contact-btn" href="https://discord.com" target="_blank">Discord: lostintentionss</a>
+      <a class="contact-btn secondary" href="https://roblox.com" target="_blank">Roblox: Lostintentionns</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Zaqkii • Built with GitHub Pages
+  </footer>
+
+</body>
+</html>
